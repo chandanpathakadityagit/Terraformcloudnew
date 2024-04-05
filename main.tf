@@ -1,3 +1,8 @@
+provider "google" {
+  project     = "prj-5-417003"
+  region      = "us-central1" # Set your desired region
+}
+
 resource "google_compute_instance" "example" {
   name         = "test"
   machine_type = "e2-micro"
